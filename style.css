@@ -1,0 +1,504 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans TC";
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 1296px;
+  margin: 0 auto;
+  display: flex;
+  border-bottom: 1px solid #f1f1f1;
+  padding: 32px 312px;
+  justify-content: space-between;
+}
+
+.header-img {
+  width: 90px;
+  height: 40px;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.menu-li {
+  padding: 4px 8px;
+  position: relative;
+}
+
+.menu li:hover {
+  font-weight: 600;
+}
+
+.menu-li::before,
+.menu-li::after {
+  position: absolute;
+  -webkit-box-reflect: below 16px;
+}
+
+.menu-li:hover::before {
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid #919191;
+  border-left: 1px solid #919191;
+}
+
+.menu-li:hover::after {
+  top: 0;
+  right: 0;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid #919191;
+  border-right: 1px solid #919191;
+}
+
+.material-symbols-outlined {
+  display: none;
+}
+
+.menu-control {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 8px 12px;
+  }
+
+  .header img {
+    width: 74px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .material-symbols-outlined {
+    display: block;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 40;
+    font-size: 40px;
+    color: #000;
+  }
+
+  .menu-control:checked~.menu {
+    display: block;
+    flex-direction: column;
+  }
+
+  .menu-control {
+    display: none;
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0px;
+  background: #fafafa;
+}
+
+.title-item {
+  width: 670px;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote {
+  width: 72px;
+}
+
+.quote-right {
+  align-self: flex-end;
+}
+
+.title-h4 {
+  font-size: 24px;
+  line-height: 1.2;
+  color: #1e1e1e;
+  margin: 0px 71px;
+}
+
+.line {
+  position: relative;
+}
+
+.line1::after {
+  position: absolute;
+  content: "";
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true);
+  background-size: contain;
+  width: 148px;
+  height: 8px;
+  bottom: 0;
+  left: 0;
+}
+
+.line2::after {
+  position: absolute;
+  content: "";
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true);
+  background-size: contain;
+  width: 148px;
+  height: 8px;
+  bottom: 0;
+  left: 0;
+}
+
+.title-h4-2 {
+  margin: 16px 24px 0px 24px;
+}
+
+.title-ul {
+  width: 636px;
+  display: flex;
+  margin: 24px 17px 0 17px;
+  text-align: center;
+  gap: 40px;
+}
+
+.title-ul li {
+  width: 298px;
+}
+
+.title-ul li hr {
+  width: 24px;
+  border: 2px solid #c1c1c1;
+}
+
+.title-p-title {
+  color: #5b5b5b;
+}
+
+.title-p {
+  color: #3b3b3b;
+}
+
+@media (max-width:767px) {
+  .title {
+    padding: 40px 24px 80px 24px;
+  }
+
+  .title-item {
+    align-items: center;
+    width: 300px;
+  }
+
+  .title-h4 {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .title-h4-2 {
+    margin: 20px 8px 20px 0;
+  }
+
+  .quote-right {
+    display: none;
+  }
+
+  .title-ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .title-ul li {
+    width: 235px;
+  }
+}
+
+.content {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 120px 0;
+  gap: 80px 24px;
+}
+
+.card {
+  width: 49%;
+}
+
+.card-image {
+  border-radius: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #f1f1f1;
+}
+
+.card-text {
+  padding: 0 16px;
+}
+
+.card-text h2 {
+  font-size: 28px;
+  color: #3b3b3b;
+  font-weight: 700;
+  padding-bottom: 8px;
+  line-height: 1.2;
+}
+
+.card-text p {
+  color: #919191;
+  padding-bottom: 24px;
+}
+
+.card-text ul {
+  display: flex;
+}
+
+.card-tag {
+  padding: 4px 12px;
+  margin-right: 16px;
+  background: #f1f1f1;
+  border-radius: 16px;
+}
+
+.page-ul {
+  display: flex;
+  margin: 72px 572px 0 572px;
+}
+
+.page-li {
+  text-align: center;
+  font-size: 24px;
+  color: #3b3b3b;
+  padding: 2px 13px;
+  border-radius: 4px;
+}
+
+.page-li-m {
+  margin: 0 16px;
+}
+
+.page-li:hover {
+  color: #ffffff;
+  background: #1e1e1e;
+}
+
+.footer {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
+  background-size: cover;
+}
+
+.footer-ul {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #fafafa;
+  padding: 80px 312px;
+}
+
+.footer-noel {
+  width: 686px;
+}
+
+.footer-h5 {
+  margin: 24px 0;
+  font-size: 20px;
+  color: #3b3b3b;
+}
+
+.footer-p {
+  font-size: 20px;
+  line-height: 1.2;
+  color: #919191;
+}
+
+.footer-list {
+  width: 306px;
+}
+
+.footer-form {
+  display: flex;
+  width: 306px;
+  border-radius: 8px;
+  border: 1px solid #c1c1c1;
+  padding: 8px 24px;
+  color: #ffffff;
+  background: #000;
+}
+
+.footer-ig {
+  display: flex;
+  width: 306px;
+  border-radius: 8px;
+  border: 1px solid #c1c1c1;
+  padding: 8px 24px;
+  margin: 24px 0;
+  background: #ffffff;
+}
+
+.footer-fb {
+  display: flex;
+  width: 306px;
+  border-radius: 8px;
+  border: 1px solid #c1c1c1;
+  padding: 8px 24px;
+  background: #ffffff;
+}
+
+.footer-list-p {
+  font-size: 20px;
+  padding: 13px 0 13px 8px;
+  color: #3b3b3b;
+}
+
+.footer-list-form-p {
+  font-weight: 700;
+  color: #ffffff;
+}
