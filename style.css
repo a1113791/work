@@ -244,6 +244,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 80px 0px;
+  gap: 24px;
   background: #fafafa;
 }
 
@@ -326,6 +327,7 @@ body {
 @media (max-width:767px) {
   .title {
     padding: 40px 24px 80px 24px;
+    gap: 40px;
   }
 
   .title-item {
@@ -361,13 +363,13 @@ body {
 .content {
   max-width: 1296px;
   margin: 0 auto;
+  padding: 120px 0;
 }
 
 .card-group {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 120px 0;
   gap: 80px 24px;
 }
 
@@ -411,7 +413,9 @@ body {
 
 .page-ul {
   display: flex;
-  margin: 72px 572px 0 572px;
+  justify-content: center;
+  padding-top: 72px;
+  gap: 16px;
 }
 
 .page-li {
@@ -422,13 +426,31 @@ body {
   border-radius: 4px;
 }
 
-.page-li-m {
-  margin: 0 16px;
-}
-
 .page-li:hover {
   color: #ffffff;
   background: #1e1e1e;
+}
+
+@media (max-width:767px) {
+  .content {
+    padding: 80px 12px;
+  }
+
+  .card-group {
+    gap: 48px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card-image {
+    width: 100%;
+  }
+
+  .page-ul {
+    padding-top: 48px;
+  }
 }
 
 .footer {
@@ -444,11 +466,18 @@ body {
 }
 
 .footer-noel {
-  width: 686px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-noel img {
+  width: 120px;
 }
 
 .footer-h5 {
-  margin: 24px 0;
+  /*margin: 24px 0;*/
   font-size: 20px;
   color: #3b3b3b;
 }
@@ -460,7 +489,10 @@ body {
 }
 
 .footer-list {
-  width: 306px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .footer-form {
@@ -479,7 +511,7 @@ body {
   border-radius: 8px;
   border: 1px solid #c1c1c1;
   padding: 8px 24px;
-  margin: 24px 0;
+  /*margin: 24px 0;*/
   background: #ffffff;
 }
 
@@ -501,4 +533,28 @@ body {
 .footer-list-form-p {
   font-weight: 700;
   color: #ffffff;
+}
+
+@media (max-width:767px) {
+  .footer {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true);
+    background-size: cover;
+  }
+
+  .footer-ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 12px;
+    gap: 40px;
+  }
+
+  .footer-noel {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-list {
+    width: 50%;
+  }
 }
