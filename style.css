@@ -249,7 +249,7 @@ body {
 }
 
 .title-item {
-  width: 670px;
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
@@ -296,11 +296,11 @@ body {
 }
 
 .title-h4-2 {
-  margin: 16px 24px 0px 24px;
+  padding: 16px 24px 0px 24px;
 }
 
 .title-ul {
-  width: 636px;
+  width: 50%;
   display: flex;
   margin: 24px 17px 0 17px;
   text-align: center;
@@ -342,7 +342,7 @@ body {
   }
 
   .title-h4-2 {
-    margin: 20px 8px 20px 0;
+    padding: 8px 20px 0 20px;
   }
 
   .quote-right {
